@@ -1,4 +1,3 @@
-import { progress } from 'framer-motion';
 import styled from 'styled-components';
 
 const HealthBarContainer = styled.div`
