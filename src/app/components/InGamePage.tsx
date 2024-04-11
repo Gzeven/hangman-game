@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,  Suspense  } from 'react';
 import Image from 'next/image'
 import HealthBar from './HealthBar';
 import { useSearchParams, useRouter } from 'next/navigation';
@@ -446,6 +446,7 @@ const InGamePage: React.FC = () => {
 
 
   return (
+    <Suspense fallback={<div>Loading...</div>}>
     <InGameContainer>
       <InGameHeader>
         <PopUpMenuContainer>
@@ -474,6 +475,7 @@ const InGamePage: React.FC = () => {
       />
     )}
     </InGameContainer>
+    </Suspense>
   );
 };
 
