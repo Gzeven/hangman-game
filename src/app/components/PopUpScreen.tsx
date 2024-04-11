@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styled, {css} from 'styled-components';
 import PopUpHeader from './PopUpHeader';
 
@@ -45,14 +45,14 @@ justify-content: center;
 align-items: center;
 h1 {
   font-size: 5.875rem;
-  margin-top: -50px;
+  margin-top: -3.125rem;
 }
 @media only screen and (min-width: 768px) {
 margin: 0 5.5rem;
 padding: 0 9.9375rem;
 h1 {
 font-size: 8.375rem;
-margin-top: -80px;
+margin-top: -5rem;
 }
 }
 
@@ -64,8 +64,8 @@ margin-top: -80px;
 const sharedButtonStyles = css`
   background: #2463FF;
   box-shadow: inset 0px -2px 0px 3px #140E66, inset 0px 1px 0px 6px #3C74FF;
-  border-radius: 40px;
-  height: 62px;
+  border-radius: 2.5rem;
+  height: 3.875rem;
   color: white;
   border: none;
   text-transform: uppercase;
@@ -89,13 +89,13 @@ const PopUpButtonContainer = styled.div`
 
 const PopupButton = styled.button`
 ${sharedButtonStyles}
-width: 226px;
+width: 14.125rem;
 
 `;
 
 const PopupButtonCategory = styled.button`
  ${sharedButtonStyles}
-  width: 275px;
+  width: 17.1875rem;
   
 `;
 
@@ -103,21 +103,71 @@ const PopupButtonQuit = styled.button`
 ${sharedButtonStyles}
 background: linear-gradient(180deg, #FE71FE 16.42%, #7199FF 100%);
 box-shadow: inset 0px -2px 0px 3px #140E66, inset 0px 1px 0px 6px #C642FB;
-width: 235px;
+width: 14.6875rem;
 
 `;
 
-const Popup: React.FC<PopupProps> = ({ onContinue, onNewCategory, onQuit, popupText, popupTextButton }) => {
+const Popup: React.FC<PopupProps> = ({
+  onContinue,
+  onNewCategory,
+  onQuit,
+  popupText,
+  popupTextButton,
+}) => {
+  const popupRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // Set focus to the pop-up when it mounts
+    if (popupRef.current) {
+      popupRef.current.focus();
+    }
+  }, []);
+
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    switch (event.key) {
+      case 'Enter':
+        // Trigger action based on focused element
+        switch (document.activeElement) {
+          case popupRef.current:
+            // Handle pressing Enter on the pop-up to prevent accidental dismissals
+            break;
+          case document.querySelector('#continueButton'):
+            onContinue();
+            break;
+          case document.querySelector('#newCategoryButton'):
+            onNewCategory();
+            break;
+          case document.querySelector('#quitButton'):
+            onQuit();
+            break;
+          default:
+            break;
+        }
+        break;
+      default:
+        break;
+    }
+  };
 
   return (
     <BackgroundContainer>
-      <PopUpScreen>
-      <PopUpHeader before={popupText} >{popupText}</PopUpHeader>  
-      <PopUpButtonContainer>
-      <PopupButton onClick={onContinue}>{popupTextButton}</PopupButton>
-      <PopupButtonCategory onClick={onNewCategory}>New Category</PopupButtonCategory>
-      <PopupButtonQuit onClick={onQuit}>Quit Game</PopupButtonQuit>
-      </PopUpButtonContainer>
+      <PopUpScreen
+        ref={popupRef}
+        tabIndex={0} // Make the pop-up focusable
+        onKeyDown={handleKeyDown} // Listen for keyboard events
+      >
+        <PopUpHeader before={popupText}>{popupText}</PopUpHeader>
+        <PopUpButtonContainer>
+          <PopupButton id="continueButton" onClick={onContinue}>
+            {popupTextButton}
+          </PopupButton>
+          <PopupButtonCategory id="newCategoryButton" onClick={onNewCategory}>
+            New Category
+          </PopupButtonCategory>
+          <PopupButtonQuit id="quitButton" onClick={onQuit}>
+            Quit Game
+          </PopupButtonQuit>
+        </PopUpButtonContainer>
       </PopUpScreen>
     </BackgroundContainer>
   );

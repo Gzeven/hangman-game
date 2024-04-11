@@ -56,7 +56,7 @@ align-items: center;
 background: linear-gradient(180deg, #FE71FE 16.42%, #7199FF 100%);
 box-shadow: inset 0px -4px 0px 5px #243041, inset 0px -12px 0px 11px #9D2DF5;
 border-radius: 999px;
-/* transition: background 2s ease-in-out; */
+transition: background 2s;
 img {
   width: 52.83px;
   height: 49.81px;
@@ -95,6 +95,7 @@ height: 3.875rem;
 text-align: center;
 text-decoration: none;
 display: flex;
+transition: background 2s;
 @media(hover: hover) and (pointer: fine) {
     &:hover {
       background: linear-gradient(0deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), #2463FF;
@@ -121,7 +122,7 @@ const MainMenu: React.FC = () => {
   return (
     <MainMenuContainer>
       <LogoImageContainer>
-        <Image src={HangManLogo}  alt="HangMan Gamelogo" />
+        <Image src={HangManLogo}  alt="HangMan Gamelogo" priority={true} />
       </LogoImageContainer>
         <PlayButton href="/category-pick">
           <Image src={IconPlay}  alt="Play the Hangman Game" /> 
