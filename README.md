@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](public\assets\images\Hangman-game-screenshot.png)
+![](public/assets/images/Hangman-game-screenshot.png)
 
 ### Links
 
