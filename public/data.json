@@ -81,7 +81,6 @@
             {"name": "Star Wars: Episode I - The Phantom Menace", "selected": false},
             {"name": "Star Wars: Episode II - Attack of the Clones", "selected": false},
             {"name": "Star Wars: Episode III - Revenge of the Sith", "selected": false},
-            {"name": "Star Wars: The Clone Wars", "selected": false},
             {"name": "Star Wars: Episode VII - The Force Awakens", "selected": false},
             {"name": "Rogue One: A Star Wars Story", "selected": false},
             {"name": "Star Wars: Episode VIII - The Last Jedi", "selected": false},
@@ -114,7 +113,9 @@
               {"name": "Pirates of the Caribbean: Dead Man's Chest", "selected": false},
               {"name": "Pirates of the Caribbean: At World's End", "selected": false},
               {"name": "Pirates of the Caribbean: On Stranger Tides", "selected": false},
-              {"name": "Pirates of the Caribbean: Dead Men Tell No Tales", "selected": false}
+              {"name": "Pirates of the Caribbean: Dead Men Tell No Tales", "selected": false},
+              {"name": "The Godfather Part II", "selected": false},
+              {"name": "Spider-Man: Across the Spider-Verse", "selected": false}
         ],
         "TV Shows": [
             {"name": "Breaking Bad", "selected": false},
@@ -196,7 +197,12 @@
   {"name": "The Golden Girls", "selected": false},
   {"name": "Who's the Boss?", "selected": false},
   {"name": "Moonlighting", "selected": false},
-  {"name": "21 Jump Street", "selected": false}
+  {"name": "21 Jump Street", "selected": false},
+  {"name": "Happy Days", "selected": false},
+  {"name": "Little House on the Prairie", "selected": false},
+  {"name": "Kojak", "selected": false},
+  {"name": "Columbo", "selected": false},
+  {"name": "Hawaii Five-O", "selected": false}
         ],
         "Countries": [
             {"name": "Afghanistan", "selected": false},

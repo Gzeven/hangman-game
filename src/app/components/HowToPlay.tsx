@@ -15,7 +15,6 @@ background: linear-gradient(
   rgba(43, 22, 119, 0.75) 100% /* 75% opacity */
 );
 padding: 2rem 1.5625rem 3.6875rem;
-/* padding: 2.5625rem 1.5625rem 3.6875rem; */
 
 @media only screen and (min-width: 768px) {
   padding: 3.8125rem 2.5rem 6.125rem;  
@@ -152,8 +151,6 @@ margin: 0;
     }
 }
 `
-
-
 
 const HowToPlayPage: React.FC = () => {
   return (

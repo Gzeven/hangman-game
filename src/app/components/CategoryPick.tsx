@@ -1,6 +1,5 @@
 "use client"
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import data from '../../../public/data.json';
@@ -75,8 +74,8 @@ const CategoryItem = styled.li`
   background-color: var(--blue);
   color: white;
   box-shadow: inset 0px -2px 0px 3px #140E66, inset 0px 1px 0px 6px #3C74FF;
-  border-radius: 20px;
-  padding: 1.5rem 0;
+  border-radius: 1.25rem;
+  /* padding: 1.5rem 0; */
   @media(hover: hover) and (pointer: fine) {
     &:hover {
       background: linear-gradient(0deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), #2463FF;
@@ -84,15 +83,8 @@ const CategoryItem = styled.li`
   } 
   }
   @media only screen and (min-width: 768px) {
-    border-radius: 40px;
-  padding: 4.1875rem 0;
-  
+    border-radius: 2.5rem;
  }
- @media only screen and (min-width: 1024px) {
-  padding: 4.4375rem 0;
-
- }
- 
 `;
 
 const CategoryButton = styled.button`
@@ -106,9 +98,14 @@ background: none;
 color: var(--white);
 cursor: pointer;
 text-align: center;
+padding: 1.5rem 0;
 @media only screen and (min-width: 768px) {
   font-size: 3rem;
   font-weight: light;
+  padding: 4.1875rem 0;
+ }
+ @media only screen and (min-width: 1024px) {
+  padding: 4.4375rem 0;
  }
 `;
 
@@ -121,8 +118,7 @@ const CategoryPickPage: React.FC = () => {
   // Handler function for category selection
   const handleCategorySelect = (category: string) => {
     // Navigate to InGame page with the selected category as query parameter
-    router.push(`/ingame?category=${encodeURIComponent(category)}`);
-     
+    router.push(`/ingame?category=${encodeURIComponent(category)}`);  
   };
 
   return (

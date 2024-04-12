@@ -3,7 +3,7 @@ import React, { useState, useEffect,  Suspense  } from 'react';
 import Image from 'next/image'
 import HealthBar from './HealthBar';
 import { useSearchParams, useRouter } from 'next/navigation';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import data from '../../../public/data.json';
 import Popup from './PopUpScreen';
 import PopupMenu from '/public/assets/images/icon-menu.svg'
@@ -206,13 +206,12 @@ const LetterGrid = styled.div`
  @media only screen and (min-width: 1024px) {
   gap: 1.5rem 1.5rem;
  }
-  /* margin-bottom: 24px; */
+ 
 `;
 
 const LetterButton = styled.button`
   width: 100%;
-  height: 3.5rem; /* Adjust height as needed */
-  /* font-size: 2.5rem; */
+  height: 3.5rem; 
   background-color: var(--white);
   color: var(--dark-navy);
   font-size: 1.5rem;

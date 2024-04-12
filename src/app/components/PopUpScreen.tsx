@@ -48,7 +48,6 @@ h1 {
   margin-top: -3.125rem;
 }
 @media only screen and (min-width: 768px) {
-margin: 0 5.5rem;
 padding: 0 9.9375rem;
 h1 {
 font-size: 8.375rem;

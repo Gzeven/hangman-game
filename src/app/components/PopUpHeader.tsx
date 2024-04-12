@@ -1,7 +1,6 @@
 import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 
-// Define the styled component for the H1 element
 const StyledContainer = styled.div`
   z-index: 999;
 `
@@ -30,7 +29,6 @@ interface HeaderProps {
     before: string;
 }
 
-// Define the H1 component
 const PopUpHeader: React.FC<HeaderProps> = ({ children, before }) => {
     return <StyledContainer>
           <StyledHeader $before={before}>
