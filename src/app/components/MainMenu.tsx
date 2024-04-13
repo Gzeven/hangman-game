@@ -42,9 +42,6 @@ margin-top:  -7rem;
   }
 
     }
-@media only screen and (min-width: 1024px) {
-
-     }
 `
 
 const PlayButton = styled(Link)`
@@ -76,11 +73,8 @@ margin-top: 3.375rem;
 img {
   width: 66.04px;
   height: 62.26px;
-}
-    }
-@media only screen and (min-width: 1024px) {
-
-     }  
+  }
+   }
 `;
 
 

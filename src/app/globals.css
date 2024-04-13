@@ -7,12 +7,9 @@
 }
 
 :root {
-  /* Primary Colors */
   --dark-navy: hsl(250, 68%, 27%);
   --blue: hsl(223, 100%, 57%);
-  --white: hsl(0, 0%, 100%);
-  
-  
+  --white: hsl(0, 0%, 100%); 
 }
 
 body {
