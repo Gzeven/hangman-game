@@ -26,6 +26,7 @@ const BackgroundContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
 `;
 
 const PopUpScreen = styled.div`

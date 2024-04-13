@@ -115,7 +115,9 @@
               {"name": "Pirates of the Caribbean: On Stranger Tides", "selected": false},
               {"name": "Pirates of the Caribbean: Dead Men Tell No Tales", "selected": false},
               {"name": "The Godfather Part II", "selected": false},
-              {"name": "Spider-Man: Across the Spider-Verse", "selected": false}
+              {"name": "Spider-Man: Across the Spider-Verse", "selected": false},
+              {"name": "La vita è bella", "selected": false}
+              
         ],
         "TV Shows": [
             {"name": "Breaking Bad", "selected": false},

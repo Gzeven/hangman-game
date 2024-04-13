@@ -6,6 +6,7 @@ import HangManLogo from '/public/assets/images/logo.svg';
 import IconPlay from  '/public/assets/images/icon-play.svg';
 import styled from 'styled-components';
 
+
 const MainMenuContainer = styled.div`
 background: linear-gradient(180deg, #344ABA 0%, rgba(0, 20, 121, 0.83) 100%);
 box-shadow: inset 0px -8px 0px 4px #140E66, inset 0px 6px 0px 8px #2463FF;
@@ -67,8 +68,6 @@ img {
   } 
   }
 
-
- 
   @media only screen and (min-width: 768px) {
 width: 12.5rem;
 height: 12.5rem;
@@ -120,6 +119,7 @@ text-transform: uppercase;
 
 const MainMenu: React.FC = () => {
   return (
+   
     <MainMenuContainer>
       <LogoImageContainer>
         <Image src={HangManLogo}  alt="HangMan Gamelogo" priority={true} />
@@ -134,6 +134,7 @@ const MainMenu: React.FC = () => {
         </HowToPlayButton>
     
     </MainMenuContainer>
+   
   );
 };
 

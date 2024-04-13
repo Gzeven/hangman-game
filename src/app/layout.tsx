@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Mouse_Memoirs } from "next/font/google";
 import "./globals.css";
 
+
 const MouseMemoirs = Mouse_Memoirs({ weight: "400", subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -15,8 +16,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+   
     <html lang="en">
-      <body className={MouseMemoirs.className}>{children}</body>
+
+  <body className={MouseMemoirs.className}>{children}</body>
+ 
     </html>
+   
   );
 }

@@ -154,6 +154,7 @@ margin: 0;
 
 const HowToPlayPage: React.FC = () => {
   return (
+  
     <HowToPlayContainer>
      <HowToPlayHeader>
     
@@ -197,6 +198,7 @@ const HowToPlayPage: React.FC = () => {
         </InfoBox>
       </InfoBoxContainer>
     </HowToPlayContainer>
+   
   );
 };
 

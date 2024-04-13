@@ -24,7 +24,6 @@ padding: 2.5625rem 1.5625rem 3.6875rem;
   padding: 5rem 7rem 10.4375rem;  
  }
  
-
 `
 
 const CategoryPickHeader = styled.div`
