@@ -299,7 +299,9 @@
       { "name": "The Mary Tyler Moore Show", "selected": false },
       { "name": "Underground Railroad", "selected": false },
       { "name": "Frasier", "selected": false },
-      { "name": "Blackadder", "selected": false }
+      { "name": "Blackadder", "selected": false },
+      { "name": "Fawlty Towers", "selected": false },
+      { "name": "Married... with Children", "selected": false }
     ],
     "Countries": [
       { "name": "Afghanistan", "selected": false },

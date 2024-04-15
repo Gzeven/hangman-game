@@ -436,13 +436,13 @@ const InGamePage: React.FC = () => {
         <InGameHeader>
           <PopUpMenuContainer>
             <PopUpMenuButton onClick={() => setShowPopup(true)}>
-              <Image src={PopupMenu} alt="Go to popup Menu" />
+              <Image src={PopupMenu} alt="Go to popup Menu" priority={true} />
             </PopUpMenuButton>
             <CurrentCategory>{currentCategory}</CurrentCategory>
           </PopUpMenuContainer>
           <HealthBarContainer>
             <HealthBar wrongSteps={wrongSteps} />
-            <Image src={Heart} alt="Hearth" />
+            <Image src={Heart} alt="Heart" priority={true} />
           </HealthBarContainer>
         </InGameHeader>
 

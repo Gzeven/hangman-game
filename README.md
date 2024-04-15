@@ -52,6 +52,7 @@ Users should be able to:
 - [Typescript](https://www.typescriptlang.org/)
 - [Next.js](https://nextjs.org/) - React framework
 - [Styled Components](https://styled-components.com/) - For styles
+- [Framer](https://www.framer.com/motion/) - For motion
 
 ## Author
 

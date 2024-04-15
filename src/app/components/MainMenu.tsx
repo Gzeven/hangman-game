@@ -121,7 +121,7 @@ const MainMenu: React.FC = () => {
         <Image src={HangManLogo} alt="HangMan Gamelogo" priority={true} />
       </LogoImageContainer>
       <PlayButton href="/category-pick">
-        <Image src={IconPlay} alt="Play the Hangman Game" />
+        <Image src={IconPlay} alt="Play the Hangman Game" priority={true}  />
       </PlayButton>
 
       <HowToPlayButton href="/how-to-play">
