@@ -1,33 +1,27 @@
-@import 'normalize.css';
-
+@import "normalize.css";
 
 @font-face {
-  font-family: 'Ubuntu';
-  src: url('../../public/assets/fonts/MouseMemoirs-Regular.ttf') format('truetype');
+  font-family: "Ubuntu";
+  src: url("../../public/assets/fonts/MouseMemoirs-Regular.ttf")
+    format("truetype");
 }
 
 :root {
   --dark-navy: hsl(250, 68%, 27%);
   --blue: hsl(223, 100%, 57%);
-  --white: hsl(0, 0%, 100%); 
+  --white: hsl(0, 0%, 100%);
 }
 
 body {
-  
-  background-image: url('/assets/images/background-mobile.svg');
+  background-image: url("/assets/images/background-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 16px;
 
-  
-
   @media only screen and (min-width: 768px) {
-  background-image: url('/assets/images/background-tablet.svg');  
-  
-    }
+    background-image: url("/assets/images/background-tablet.svg");
+  }
   @media only screen and (min-width: 1024px) {
-    background-image: url('/assets/images/background-desktop.svg'); 
-     }
+    background-image: url("/assets/images/background-desktop.svg");
+  }
 }
-
-

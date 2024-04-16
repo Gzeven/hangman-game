@@ -19,7 +19,6 @@ const MainMenuContainer = styled.div`
     max-width: 37rem;
     margin: 12.9375rem auto;
   }
-
   @media only screen and (min-width: 1024px) {
     margin: 19.5625rem auto 13.1875rem;
   }
@@ -51,7 +50,7 @@ const PlayButton = styled(Link)`
   background: linear-gradient(180deg, #fe71fe 16.42%, #7199ff 100%);
   box-shadow: inset 0px -4px 0px 5px #243041, inset 0px -12px 0px 11px #9d2df5;
   border-radius: 999px;
-  transition: background 2s;
+
   img {
     width: 52.83px;
     height: 49.81px;
@@ -121,7 +120,7 @@ const MainMenu: React.FC = () => {
         <Image src={HangManLogo} alt="HangMan Gamelogo" priority={true} />
       </LogoImageContainer>
       <PlayButton href="/category-pick">
-        <Image src={IconPlay} alt="Play the Hangman Game"/>
+        <Image src={IconPlay} alt="Play the Hangman Game" />
       </PlayButton>
 
       <HowToPlayButton href="/how-to-play">
