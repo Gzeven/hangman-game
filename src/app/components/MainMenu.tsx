@@ -21,12 +21,10 @@ const MainMenuContent = styled.div`
   flex-direction: column;
   align-items: center;
   width: 86.4%;
-  height: 30.0625rem;
   margin-top: 4rem;
 
   @media only screen and (min-width: 768px) {
     max-width: 37rem;
-    height: 31.25rem;
     margin-top: 6.875rem;
   }
   @media only screen and (min-width: 1024px) {
