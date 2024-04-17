@@ -31,13 +31,14 @@ const InGameContainer = styled.div`
     /* 75% opacity */ rgba(21, 18, 120, 0.75) 70.31%,
     /* 75% opacity */ rgba(43, 22, 119, 0.75) 100% /* 75% opacity */
   );
-  padding: 2.5625rem 1.5625rem 10.125rem;
+  min-height: 100vh;
+  padding: 2.5625rem 1.5625rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+
   @media only screen and (min-width: 768px) {
-    padding: 3.8125rem 2.5rem 6.5rem;
+    padding: 3.8125rem 2.5rem;
   }
 `;
 

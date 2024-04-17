@@ -14,14 +14,15 @@ background: linear-gradient(
   rgba(21, 18, 120, 0.75) 70.31%,  /* 75% opacity */
   rgba(43, 22, 119, 0.75) 100% /* 75% opacity */
 );
-padding: 2rem 1.5625rem 3.6875rem;
+padding: 2rem 1.5625rem;
+min-height: 100vh;
 
 @media only screen and (min-width: 768px) {
-  padding: 3.8125rem 2.5rem 6.125rem;  
+  padding: 3.8125rem 2.5rem;
  }
 
  @media only screen and (min-width: 1024px) {
-  padding: 5rem 7rem 10.4375rem;  
+  padding: 5rem 7rem;  
  }
 
 `

@@ -7,25 +7,31 @@ import IconPlay from "/public/assets/images/icon-play.svg";
 import styled from "styled-components";
 
 const MainMenuContainer = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+`
+
+const MainMenuContent = styled.div`
   background: linear-gradient(180deg, #344aba 0%, rgba(0, 20, 121, 0.83) 100%);
   box-shadow: inset 0px -8px 0px 4px #140e66, inset 0px 6px 0px 8px #2463ff;
   border-radius: 3rem;
-  margin: 12.875rem 1.5625rem 7.8125rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 86.4%;
+  margin-top: 4rem;
 
   @media only screen and (min-width: 768px) {
     max-width: 37rem;
-    margin: 12.9375rem auto;
+    margin-top: 6.875rem;
   }
   @media only screen and (min-width: 1024px) {
-    margin: 19.5625rem auto 13.1875rem;
   }
 `;
 
 const LogoImageContainer = styled.div`
-  position: relative;
   img {
     height: 130.2px;
     width: 263px;
@@ -116,6 +122,7 @@ const HowToPlayButton = styled(Link)`
 const MainMenu: React.FC = () => {
   return (
     <MainMenuContainer>
+      <MainMenuContent>
       <LogoImageContainer>
         <Image src={HangManLogo} alt="HangMan Gamelogo" priority={true} />
       </LogoImageContainer>
@@ -126,6 +133,7 @@ const MainMenu: React.FC = () => {
       <HowToPlayButton href="/how-to-play">
         <p>How to Play</p>
       </HowToPlayButton>
+      </MainMenuContent>
     </MainMenuContainer>
   );
 };
