@@ -27,8 +27,6 @@ const MainMenuContent = styled.div`
     max-width: 37rem;
     margin-top: 6.875rem;
   }
-  @media only screen and (min-width: 1024px) {
-  }
 `;
 
 const LogoImageContainer = styled.div`
