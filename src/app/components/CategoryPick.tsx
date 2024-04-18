@@ -127,9 +127,11 @@ const CategoryPickPage: React.FC = () => {
       </CategoryPickHeader>
       <CategoryList>
         {categories.map((category) => (     
-            <CategoryButton key={category} onClick={() => handleCategorySelect(category)}>
+           <li key={category}>
+            <CategoryButton onClick={() => handleCategorySelect(category)}>
               {category}
             </CategoryButton>
+            </li>
         ))}
       </CategoryList>
     </CategoryPickContainer>
