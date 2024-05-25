@@ -79,7 +79,7 @@ const CategoryButton = styled.button`
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.05em;
-  width: 100%;
+  width: 100%; 
   cursor: pointer;
   text-align: center;
   padding: 1.5rem 0;
@@ -97,7 +97,6 @@ const CategoryButton = styled.button`
   @media only screen and (min-width: 768px) {
     border-radius: 2.5rem;
     font-size: 3rem;
-    font-weight: light;
     padding: 4.1875rem 0;
   }
   @media only screen and (min-width: 1024px) {

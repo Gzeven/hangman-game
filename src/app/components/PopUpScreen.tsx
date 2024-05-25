@@ -71,6 +71,17 @@ const sharedButtonStyles = css`
   letter-spacing: 0.05em;
   margin: 0 auto;
   cursor: pointer;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.25),
+          rgba(255, 255, 255, 0.25)
+        ),
+        #2463ff;
+      box-shadow: inset 0px -2px 0px 3px #140e66, inset 0px 1px 0px 6px #3c74ff;
+    }
+  }
 `;
 
 const PopUpButtonContainer = styled.div`
@@ -99,6 +110,18 @@ const PopupButtonQuit = styled.button`
   background: linear-gradient(180deg, #FE71FE 16.42%, #7199FF 100%);
   box-shadow: inset 0px -2px 0px 3px #140e66, inset 0px 1px 0px 6px #c642fb;
   width: 14.6875rem;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.25),
+          rgba(255, 255, 255, 0.25)
+        ),
+        linear-gradient(180deg, #fe71fe 16.42%, #7199ff 100%);
+        box-shadow: inset 0px -2px 0px 3px #140E66, inset 0px 1px 0px 6px #C642FB;
+    }
+  }
+
 `;
 
 const Popup: React.FC<PopupProps> = ({
